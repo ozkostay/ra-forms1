@@ -18,9 +18,9 @@ export default function ColorForm () {
     const rgbInput = document.querySelector('.rgbColor');
     if (rgb) {
       // Если всё хорошо
-      document.body.style.background = hex;
+      document.body.style.background = hex; // меняем цвет body
       setRgbColor(`rgb(${rgb.r},${rgb.g},${rgb.b})`); // пишем в input rgbcolor
-      rgbInput.style.backgroundColor = '#55038e'; // меняем цвет body
+      rgbInput.style.backgroundColor = '#55038e';
     } else {
       // Если при вводе ошибка
       setRgbColor("Ошибка");
